@@ -16,6 +16,3 @@ os.mkdir ("/root/Forensic/"+case+"/download")
 os.mkdir ("/root/Forensic/"+case+"/evidence")
 os.mkdir ("/root/Forensic/"+case+"/prefetch")
 os.mkdir ("/root/Forensic/"+case+"/recycle")
-
-dd = os.lsblk()
-print (dd)
