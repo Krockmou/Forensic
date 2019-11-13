@@ -2,15 +2,18 @@
 
 import shutil
 import os
+# Liste des case existants :
+cases_exist = os.listdir ("/root/Forensic/")
+print (cases_exist)
 
-case = input ("Case name: ")
+case = input ("Which Case ? : ")
 
 #Liste des utilisateurs disponibles sur la partition montée
 users_sdb = os.listdir ("/root/Forensic/"+case+"/source/Users/")
 print ("Utilisateurs disponibles :", users_sdb)
 
 #Récupération du nom d'utilisateur
-user = input ("Name user : ")
+user = input ("Name user ? : ")
 
 #Extract SAM
 shutil.copy('/root/Forensic/'+ case +'/source/Windows/System32/config/SAM','/root/Forensic/'+ case +'/artefacts/SAM')
