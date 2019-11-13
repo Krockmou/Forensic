@@ -24,7 +24,7 @@ if here :
         print ("Le case : {} a bien été créé dans le dossier Forensic.".format (case))
 
     else :
-        print ("Au revoir bobo")
+        print ("Au revoir !")
 
 else :
     print ("Le dossier Forensic n'existe pas. Souhaitez vous le créér ? yes/no")
@@ -44,4 +44,4 @@ else :
         os.mkdir ("/root/Forensic/"+case+"/recycle")
         print ("Tous les dossier ont bien été créé dans le dossier Forensic, case : {}".format (case))
     else :
-        print ("Au revoir")
+        print ("Au revoir !")
